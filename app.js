@@ -1,21 +1,23 @@
+Vue.config.productionTip = false
+
+Vue.component('start', {
+  template: '#start'
+})
+
+Vue.component('next', {
+  template: '#next'
+})
+
 new Vue({
   el: '#app',
+  
   data: {
-    newtodo: "",
-    todos: []
+    page: 'start'
   },
+  
   methods: {
-    addTodo: function(event) {
-      event.preventDefault();
-      if (this.newtodo == "") return;
-      this.todos.push({
-        item: this.newtodo
-      });
-      this.newtodo = "";
-    },
-    deleteTodo: function(todo) {
-      var index = this.todos.indexOf(todo);
-      this.todos.splice(index, 1)
+    onChangePage(to) {
+      this.page = to
     }
   }
 })

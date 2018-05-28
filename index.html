@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="main.scss">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head> 
 <body>
+    <!-- <div class="row">
+        <div class="col s12 m6">
+            <transition>
+                <p v-if="isAppear">この要素はアニメーションの対象になります。</p>
+            </transition>
+        </div>
+    </div> -->
     <div id="app">
-        <form>
-          <input type="text" v-model="newtodo">
-          <button v-on:click="addTodo">追加</button>
-        </form>
-        <ul>
-          <li v-for="todo in todos">
-            {{todo.item}}
-            <button v-on:click="deleteTodo(todo)">削除</button>
-          </li>
-        </ul>
-    </div>
+            <transition name="page" :duration="1300">
+              <div class="page" :is="page" @change-page="onChangePage"></div>
+            </transition>
+          </div>
+          <script id="start" type="text/x-template">
+            <div class="start">
+              <div class="inner"> 
+                <h1 class="title enter-1">Page Transition Demo</h1>
+                <div class="button-wrapper enter-2">
+                  <button class="button button-start" type="button" @click="$emit('change-page', 'next')"> <span class="button-text">Start!</span></button>
+                </div>
+              </div>
+            </div>
+          </script>
+          <script id="next" type="text/x-template">
+            <div class="next">
+              <div class="inner">
+                <h1 class="title enter-1">You may want to use...</h1>
+                <ul class="next-list">
+                  <li class="enter-2">&lt;transition&gt; built-in component of Vue.js</li>
+                  <li class="enter-3">CSS Transition/Animation for simple animation combinations</li>
+                  <li class="enter-4">JavaScript hooks for complex animation      </li>
+                </ul>
+                <div class="button-wrapper enter-5">
+                  <button class="button button-next" type="button" @click="$emit('change-page', 'start')"><span class="button-text">Back</span></button>
+                </div>
+              </div>
+            </div>
+          </script>
     <script src="app.js"></script>
 </body>
 
