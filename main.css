@@ -1,0 +1,101 @@
+body {
+  font-size: 20px;
+  text-align: center;
+  font-family: Noto Sans Japanese, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#letter{
+  height: 90%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.modal-content{
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.description{
+  margin-top: 70px;
+}
+img{
+  height: 150px;
+  width: 90%;
+}
+.q{
+  margin-top: 70px;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  background: #FFF;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+}
+.answer{
+  font-size: 2.5ex;
+}
+.ok{
+  font-size: 3.5ex;
+}
+
+.practice {
+  /* position: relative; */
+  background: url(imgs/練習問題.jpg) no-repeat;
+  margin-bottom: 30px;
+  height: 250px;
+  width: 100%;
+}
+
+.practice p {
+  font-size: 5.5ex;
+  /* position: absolute; */
+  color: white;
+  padding: 90px 10px;
+  margin: 0 auto;
+}
+
+.practice img {
+  /* width: 100%;
+  height: 300px; */
+}
+.access{
+  height: 300px;
+  width: 90%;
+}
+
+.rule {
+  /* position: relative; */
+  background: url(imgs/rule2.png) ;
+  height: 250px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.rule p {
+  font-size: 5.5ex;
+  /* position: absolute; */
+  color: white;
+  padding: 90px 10px;
+  margin: 0 auto;
+}
+
+.access {
+  /* position: relative; */
+  background: url(imgs/map.png);
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.access p {
+  font-size: 5.5ex;
+  /* position: absolute; */
+  color: white;
+  padding: 90px 10px;
+  margin: 0 auto;
+}
+.card{
+  font-size: 18px;
+}
+iframe{
+  margin-top: 30px;
+}
