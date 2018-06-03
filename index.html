@@ -179,14 +179,14 @@
           </div>
           <div class="col s12 m4">
             <img src="imgs/q3.png">
-            <p>ナゾ1の答え <br> {{ q3 }} </p>
+            <p>ナゾ3の答え <br> {{ q3 }} </p>
             <input v-model="q3">
           </div>
           <div class="answer col s12">
             <p>合言葉 : " {{ q1 }}{{ q2 }}{{ q3 }} "</p>
           </div>
           <div class="col s12">
-            <p v-if="q1+q2+q3 === a" class="ok">正解！</p>
+            <p v-if="q1+q2+q3 === a" class="ok">正解！<br><small>合言葉を講師に伝えるとプレザントがあるぞ！</small></p>
             <p v-else>すべてのナゾの答えを正しく入力すると、【正解！】と表示されるぞ！</p>
           </div>
         </div>
