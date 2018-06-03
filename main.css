@@ -167,3 +167,7 @@ iframe{
 #booking a:hover {
   opacity: 0.8;
 }
+
+.map img{
+  height: 300px;
+}
