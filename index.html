@@ -60,7 +60,7 @@
           非常に難易度の高い問題も多数ありますので、熟練者でも完全クリアは容易ではありません。</p>
           <p>大切なのは「論理的思考力」と「チームワーク」です。力を合わせてナゾを解き明かしてください。</p>
         </div>
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">ストーリー</a>
+        <a class="waves-effect waves-light btn modal-trigger btn-large" href="#modal1">ストーリー設定</a>
         <div id="modal1" class="modal">
           <div class="modal-content">
             <img id="letter" src="imgs/0.png">
@@ -69,6 +69,8 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
   <div class="rule"> 
     <p>ルール</p>
   </div>
@@ -78,10 +80,10 @@
       <p>ナゾには【ストーリー用のナゾ】と【アイテム用のナゾ】があります。</p> 
       <p>【ストーリー用のナゾ】を解いていくと、爆弾の解除コードが手に入ります。【アイテム用のナゾ】を解くと便利アイテムが手に入ります。</p> 
       <p>アイテムは「エンピツ」「消しゴム」「電卓」などナゾを解くのに使える物から、息抜きのための「お菓子」や、行き詰まった時のための「ヒント券」などもあります。</p> 
-      <a class="waves-effect waves-light btn modal-trigger" href="#modal2">禁止事項</a>
+      <a class="waves-effect waves-light btn modal-trigger btn-large" href="#modal2"><i class="material-icons left">warning</i>禁止事項</a>
       <div id="modal2" class="modal">
         <div class="modal-content">
-          <h3>ルール</h3>
+          <h4>以下は禁止です。</h4>
           <ol>
             <li><p>走らない。</p>
             <li><p>つくえやイスなど、何かの上にのらない。</p>
@@ -96,14 +98,17 @@
           </ol> 
         </div>
       </div>
+      <br>
+      <br>
       <hr>
       <h5>会場写真</h5> 
+      <br>
       <div class="col s6 m4">
         <div class="card">
           <div class="card-image">
             <img src="imgs/i01.png">
             <span class="card-title">教室</span>
-            <a href="imgs/i01.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">open_in_new</i></a>
+            <a href="imgs/i01.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">photo_size_select_large</i></a>
           </div>
         </div>
       </div>
@@ -112,7 +117,7 @@
           <div class="card-image">
             <img src="imgs/i02.png">
             <span class="card-title">応接室</span>
-            <a href="imgs/i02.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">open_in_new</i></a>
+            <a href="imgs/i02.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">photo_size_select_large</i></a>
           </div>
         </div>
       </div>
@@ -121,7 +126,7 @@
           <div class="card-image">
             <img src="imgs/i03.png">
             <span class="card-title">病室</span>
-            <a href="imgs/i03.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">open_in_new</i></a>
+            <a href="imgs/i03.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">photo_size_select_large</i></a>
           </div>
         </div>
       </div>
@@ -130,7 +135,7 @@
           <div class="card-image">
             <img src="imgs/i04.png">
             <span class="card-title">メイク室</span>
-            <a href="imgs/i04.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">open_in_new</i></a>
+            <a href="imgs/i04.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">photo_size_select_large</i></a>
           </div>
         </div>
       </div>
@@ -139,7 +144,7 @@
           <div class="card-image">
             <img src="imgs/i05.png">
             <span class="card-title">オフィス</span>
-            <a href="imgs/i05.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">open_in_new</i></a>
+            <a href="imgs/i05.png" target="_new" class="btn-floating halfway-fab waves-effect waves-light red"><i class="large material-icons">photo_size_select_large</i></a>
           </div>
         </div>
       </div>
@@ -152,62 +157,162 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
   <div class="practice"> 
     <p>練習問題</p>
   </div>
   <div class="container">
     <div class="row">
       <div class="col s12 q">
-        <p>下の３つのナゾを解くと、「あるワード」になります。チャレンジしてみてください。</p>
+        <p>下の３つのナゾを解くと、「合言葉」になります。チャレンジしてみてください。</p>
         <div id="qa">
           <div class="col s12 m4">
             <img src="imgs/q1.png">
-            <p>ナゾ1の答え <br>" {{ q1 }} "</p>
+            <p>ナゾ1の答え <br> {{ q1 }} </p>
             <input v-model="q1">
           </div>
           <div class="col s12 m4">
             <img src="imgs/q2.png">
-            <p>ナゾ2の答え <br>" {{ q2 }} "</p>
+            <p>ナゾ2の答え <br> {{ q2 }} </p>
             <input v-model="q2">
           </div>
           <div class="col s12 m4">
             <img src="imgs/q3.png">
-            <p>ナゾ1の答え <br>" {{ q3 }} "</p>
+            <p>ナゾ1の答え <br> {{ q3 }} </p>
             <input v-model="q3">
           </div>
-          <div class="answer">
-            <p>「あるワード」 : " {{ q1 }}{{ q2 }}{{ q3 }} "</p>
+          <div class="answer col s12">
+            <p>合言葉 : " {{ q1 }}{{ q2 }}{{ q3 }} "</p>
           </div>
-          <div>
+          <div class="col s12">
             <p v-if="q1+q2+q3 === a" class="ok">正解！</p>
-            <p v-else>すべてのナゾの答えを入力すると、【正解！】と表示されるぞ！</p>
+            <p v-else>すべてのナゾの答えを正しく入力すると、【正解！】と表示されるぞ！</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <br>
   <div class="access"> 
     <p>開催場所</p>
   </div>
   <div class="container">
     <div class="row">
-      <p>住所：〒556-0013</p>
+      <p>開催場所住所：〒556-0013</p>
       <p>大阪市浪速区戎本町1丁目8-5 セビーヌ難波南</p>
       <p>大阪市営地下鉄御堂筋線　大国町駅　徒歩３分</p>
-      <a class="waves-effect waves-light btn modal-trigger" href="#modal3">駅からのアクセス方法</a>
+      <br>
+      <a class="waves-effect waves-light btn modal-trigger btn-large" href="#modal3"><i class="material-icons left">subway</i>駅からのアクセス方法</a>
       <div id="modal3" class="modal">
         <div class="modal-content">
           <h4>駅からのアクセス方法</h4>
-          <p>大阪市営地下鉄御堂筋線　大国町駅の番出口を降りる<small>必ず出口で下りてください。迷子になる原因です</small></p>  
+          <p>大阪市営地下鉄御堂筋線　大国町駅の番出口を降りる<small>必ず出口で下りてください。</small></p>  
           <p>の方向にまっすぐすすむ</p>  
           <p>パーキングまで来たら、右に曲がる</p>  
           <p>少し歩いたところにある右側ビルです</p> 
         </div>
       </div>
       <br>
+      <br>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.9622376629363!2d135.5010792354431!3d34.65661023003696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e76455f97c01%3A0x4f6f1d4b1f966ae5!2z44CSNTU2LTAwMTMg5aSn6Ziq5bqc5aSn6Ziq5biC5rWq6YCf5Yy65oiO5pys55S677yR5LiB55uu77yY4oiS77yV!5e0!3m2!1sja!2sjp!4v1527849922856" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
+  <br>
+  <div class="info"> 
+    <p>イベント情報</p>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div>
+        <h4>開催日程</h4><br>
+        <table class="highlight">
+          <thead>
+            <tr>
+              <th>開催日</th>
+              <th>第1部（11:00-13:00）</th>
+              <th>第2部（13:30-15:30）</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>7月16日(月)</td>
+              <td>受付中</td>
+              <td>受付中</td>
+            </tr>
+            <tr>
+              <td>8月6日(月)</td>
+              <td>受付中</td>
+              <td>受付中</td>
+            </tr>
+            <tr>
+              <td>8月19日(日)</td>
+              <td>受付中</td>
+              <td>受付中</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+      <h4>参加費用</h4><br>
+      <div>
+        <table class="highlight">
+          <tbody>
+            <tr>
+              <td>一般参加費</td>
+              <td>5,000円（税込み）</td>
+            </tr>
+            <tr>
+              <td>キノコード会員参加費</td>
+              <td>4,000円（税込み）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+      <h4>お申込み方法</h4><br>
+      <div>
+          <a href="https://select-type.com/e/?id=uP6Grc9lBf4" target="_new" class="waves-effect waves-light btn-large"><i class="material-icons left">send</i>予約フォーム</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">キッズプログラミング教室キノコード</h5>
+            <p class="grey-text text-lighten-4">大阪府吹田市江坂町1-21−39</p>
+            <p class="grey-text text-lighten-4">Tel：06-6155-9020</p>
+            <p class="grey-text text-lighten-4">E-mail（日本語コース、その他）:
+              <br>contact-jp@kinocode.jp
+              <br>kinocode3@gmail.com</p>
+            <p class="grey-text text-lighten-4">E-mail（英語コース）: 
+              <br>contact-en@kinocode.jp</p>
+          </div>
+          <div class="col l2 offset-l2 s12">
+            <h5 class="white-text">リンク</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="http://kinocode.jp/" target="_new">ホームページ</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://153.126.202.140/completes" target="_new">生徒作品</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://kinocode.jp/?page_id=27" target="_new">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Kinocode
+        </div>
+      </div>
+    </footer>
+  <p id="pageTop"><a href="#" class="arge material-icons">arrow_drop_up</a></p>
+  <p id="booking"><a href="https://select-type.com/e/?id=uP6Grc9lBf4" target="_new">予約</a></p>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
