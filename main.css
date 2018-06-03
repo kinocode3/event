@@ -171,3 +171,6 @@ iframe{
 .map img{
   height: 300px;
 }
+.small{
+  text-align: right;
+}
